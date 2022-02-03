@@ -23,7 +23,7 @@ export const connect = async () => {
 
   // OUR PROJECT MODEL
   const Project =
-    mongoose.models.Todo || mongoose.model("Project", ProjectSchema);
+    mongoose.models.Project || mongoose.model("Project", ProjectSchema);
 
   return { conn, Project };
 };

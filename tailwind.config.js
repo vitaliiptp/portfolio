@@ -8,32 +8,29 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ["Jost", ...defaultTheme.fontFamily.sans],
+        primary: ["VT323", ...defaultTheme.fontFamily.sans],
       },
+      // screens: {
+      //   'phone': '320px',
+      //   // => @media (min-width: 640px) { ... }
+      //
+      //   'tablet': '640px',
+      //   // => @media (min-width: 640px) { ... }
+      //
+      //   'laptop': '1024px',
+      //   // => @media (min-width: 1024px) { ... }
+      //
+      //   'desktop': '1280px',
+      //   // => @media (min-width: 1280px) { ... }
+      // },
     },
     colors: {
-      'body-background': '#F2F2F2',
-      'blue-normal': '#4661E6',
-      'blue-normal-hover': '#7C91F9',
-      'blue-light': '#62BCFA',
-      'blue-dark': '#373F68',
-      'blue-deep': '#3A4374',
-      'blue-deep-hover': '#656EA3',
-      'blue-gradient': '#28A7ED',
-      'grey-light': '#647196',
-      'pink-gradient': '#E84D70',
-      'purple-normal': '#AD1FEA',
-      'purple-normal-hover': '#C75AF6',
-      'purple-gradient': '#A337F6',
-      'purple-light': '#8C92B3',
-      'purple-light_tr': 'rgba(140,146,179,0.51)',
-      'red-normal': '#D73737',
-      'red-normal-hover': '#E98888',
-      'salmon-normal': '#F49F85',
-      'white-normal': '#FFFFFF',
-      'white-light': '#F7F8FD',
-      'white-dark': '#F2F4FF',
-      'white-dark-hover': '#CFD7FF',
+      'erin': '#33ff33',
+      'black': '#000000',
+      'yellow-green': '#00BA00',
+      'tea-green': '#C7FFC7',
+      'honeydew': '#F0FFF0',
+      'neon': '#00E500',
     },
   },
   plugins: [],

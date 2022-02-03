@@ -7,7 +7,9 @@ export interface ResponseFunc {
 }
 
 export interface Project {
+    _id?: string
     url: string;
     description?: string;
     screenshots?: string[];
 }
+

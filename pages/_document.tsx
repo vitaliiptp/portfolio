@@ -10,14 +10,17 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <link rel="icon" href="/favicon.ico" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+            // href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+            // href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+            href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
             rel="stylesheet"
           />
         </Head>
-        <body className="font-primary">
+        <body className="font-primary bg-black">
           <Main />
           <NextScript />
         </body>
