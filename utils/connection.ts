@@ -17,6 +17,7 @@ export const connect = async () => {
   // OUR PROJECT SCHEMA
   const ProjectSchema = new mongoose.Schema({
     url: { type: String, required: true },
+    name: { type: String, required: true },
     description: { type: Boolean },
     screenshots: [{ type: String }],
   });

@@ -9,6 +9,7 @@ export interface ResponseFunc {
 export interface Project {
     _id?: string
     url: string;
+    name: string;
     description?: string;
     screenshots?: string[];
 }

@@ -8,8 +8,11 @@
 
 
     /* Fonts (b = bold, n = normal) */
-    .text-b-26 {
-        @apply font-bold text-[26px] text-erin;
+    .text-b-xl {
+        @apply font-bold text-4xl text-erin;
+    }
+    .text-b {
+        @apply font-bold text-xl text-black;
     }
 }
 

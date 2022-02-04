@@ -31,6 +31,7 @@ module.exports = {
       'tea-green': '#C7FFC7',
       'honeydew': '#F0FFF0',
       'neon': '#00E500',
+      'yellow': '#e3cc3c'
     },
   },
   plugins: [],

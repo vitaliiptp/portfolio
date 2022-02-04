@@ -1,5 +1,5 @@
-// @ts-ignore
 // import React, { useEffect, useRef } from 'react';
+//
 //
 // function Canvas({ timeout }) {
 //   const canvas = useRef(null);
@@ -49,7 +49,7 @@
 //     }, [canvas, timeout]);
 //
 //   return (
-//       <div
+//       <div className="min-h-screen"
 //           style={{
 //             // custom styles to make it show up in the background
 //             // background: '#000000',

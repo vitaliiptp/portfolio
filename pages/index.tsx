@@ -1,12 +1,38 @@
-import type { NextPage } from 'next'
-import Navbar from "../components/Navbar";
+  import type { NextPage } from "next";
+import Projects from "../components/Projects";
+import Home from "../components/Home";
+import { Project } from "../utils/types";
+import TechStack from "../components/TechStack";
+import Resume from "../components/Resume";
+import Contact from "../components/Contact";
 
-const Home: NextPage = () => {
-  return (
-    <div className="flex, min-h-screen">
-      <Navbar />
-    </div>
-  )
+interface ProjectProps {
+  projects: Project[];
 }
 
-export default Home
+const MainComponent: NextPage<ProjectProps> = ({ projects }) => {
+  return (
+    <div>
+        <Home />
+        <Projects projects={projects} />
+      <TechStack />
+      <Resume />
+      <Contact />
+    </div>
+  );
+};
+
+export default MainComponent;
+
+export async function getServerSideProps() {
+  const res = await fetch("http://localhost:3000/api/projects");
+  const data = await res.json();
+  if (!data) {
+    return {
+      notFound: true,
+    };
+  }
+  return {
+    props: { projects: data },
+  };
+}
