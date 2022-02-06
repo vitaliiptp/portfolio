@@ -8,11 +8,13 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <>
-      <Navbar />
+    <div className="flex justify-center">
+      <div className="mx-12 text-justify lg:w-3/4">
+        <Navbar />
         <main>{children}</main>
-      <Footer />
-    </>
+        <Footer />
+      </div>
+    </div>
   );
 };
 

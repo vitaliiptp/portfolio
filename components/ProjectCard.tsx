@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from "next/image";
 import {Project} from '../utils/types'
 
 
@@ -12,9 +11,13 @@ const ProjectCard = ({projects}: ProjectProps) => {
     return (
         <div>
             {projects.map((project) =>
-                <div key={project._id} className="flex items-center justify-center p-7">
-                    <img src={`/assets/${project._id}.png`} alt="Logo" width={300} height={190}/>
-                    <p className="text-b-xl">{project.name}</p>
+                <div key={project._id} className="flex justify-start pt-10">
+                    <div className="flex px-10 active">
+                        <img src={`/assets/${project._id}.png`} alt="Logo" width={400} />
+                    </div>
+                    <div>
+                        <p className="text-b-xl">{project.name}</p>
+                    </div>
                 </div>
             )}
         </div>

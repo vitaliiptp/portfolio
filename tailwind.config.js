@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ["VT323", ...defaultTheme.fontFamily.sans],
+        primary: ["Montserrat", ...defaultTheme.fontFamily.sans],
       },
       // screens: {
       //   'phone': '320px',
