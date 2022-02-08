@@ -1,4 +1,4 @@
-  import type { NextPage } from "next";
+import type { NextPage } from "next";
 import Projects from "../components/Projects";
 import Home from "../components/Home";
 import { Project } from "../utils/types";
@@ -12,8 +12,8 @@ interface ProjectProps {
 const MainComponent: NextPage<ProjectProps> = ({ projects }) => {
   return (
     <div>
-        <Home />
-        <Projects projects={projects} />
+      <Home />
+      <Projects projects={projects} />
       <TechStack />
       <Contact />
     </div>
