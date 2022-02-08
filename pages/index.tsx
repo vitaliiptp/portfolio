@@ -3,7 +3,6 @@ import Projects from "../components/Projects";
 import Home from "../components/Home";
 import { Project } from "../utils/types";
 import TechStack from "../components/TechStack";
-import Resume from "../components/Resume";
 import Contact from "../components/Contact";
 
 interface ProjectProps {
@@ -16,7 +15,6 @@ const MainComponent: NextPage<ProjectProps> = ({ projects }) => {
         <Home />
         <Projects projects={projects} />
       <TechStack />
-      <Resume />
       <Contact />
     </div>
   );

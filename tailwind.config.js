@@ -26,7 +26,9 @@ module.exports = {
     },
     colors: {
       'erin': '#33ff33',
-      'black': 'rgb(28,28,28)',
+      'grey': 'rgb(45,45,45)',
+      'light-grey': 'rgb(65,65,65)',
+      'dark-grey': 'rgb(58,58,58)',
       'yellow-green': '#00BA00',
       'yellow-green_opacity': 'rgba(0,186,0,0.47)',
       'tea-green': '#C7FFC7',

@@ -6,7 +6,7 @@ const Navbar = () => {
   const [active, setActive] = useState(false);
 
   return (
-    <header className="sticky top-0 bg-black">
+    <header className="sticky top-0 bg-grey">
       <nav className="flex flex-col items-end py-3 sm:items-center text-b-xl sm:pr-0">
         <div className="py-3 sm:hidden">
           <Hamburger active={active} setActive={setActive} />
@@ -33,12 +33,6 @@ const Navbar = () => {
               <a className="pt-3 opacity-80 sm:py-0 sm:px-7 sm:py-2 hover:opacity-100 focus:border-b-4 focus:opacity-100"
                  onClick={() => setActive(!active)}>
                 Tech Stack
-              </a>
-            </Link>
-            <Link href="/#resume">
-              <a className="pt-3 opacity-80 sm:py-0 sm:px-7 sm:py-2 hover:opacity-100 focus:border-b-4 focus:opacity-100"
-                 onClick={() => setActive(!active)}>
-                Resume
               </a>
             </Link>
             <Link href="/#contact">

@@ -11,7 +11,7 @@ const ProjectCard = ({projects}: ProjectProps) => {
     return (
         <div>
             {projects.map((project) =>
-                <div key={project._id} className="flex flex-col justify-start pt-10 sm:flex-row">
+                <div key={project._id} className="flex flex-col justify-start pt-20 sm:flex-row">
                     <div className="flex px-10 active flex-[35%]">
                         <div>
                             <img src={`/assets/${project._id}.png`} alt="Logo" width={500} height={340} />
