@@ -17,25 +17,25 @@ const Navbar = () => {
               active ? "" : "hidden"
             } flex flex-col items-end w-full border-b-2 sm:flex-row sm:inline-flex sm:justify-center sm:items-center sm:pt-3`}
           >
-            <Link href="/#home">
+            <Link href="/">
               <a className="pt-3 opacity-80 sm:py-0 sm:px-7 sm:py-2 hover:opacity-100 focus:border-b-4 focus:opacity-100"
               onClick={() => setActive(!active)}>
                 Home
               </a>
             </Link>
-            <Link href="/#projects">
+            <Link href="/projects">
               <a className="pt-3 opacity-80 sm:py-0 sm:px-7 sm:py-2 hover:opacity-100 focus:border-b-4 focus:opacity-100"
                  onClick={() => setActive(!active)}>
                 Projects
               </a>
             </Link>
-            <Link href="/#tech-stack">
+            <Link href="/technologies">
               <a className="pt-3 opacity-80 sm:py-0 sm:px-7 sm:py-2 hover:opacity-100 focus:border-b-4 focus:opacity-100"
                  onClick={() => setActive(!active)}>
                 Tech Stack
               </a>
             </Link>
-            <Link href="/#contact">
+            <Link href="/contact">
               <a className="pt-3 opacity-80 sm:py-0 sm:px-7 sm:py-2 hover:opacity-100 focus:border-b-4 focus:opacity-100"
                  onClick={() => setActive(!active)}>
                 Contact

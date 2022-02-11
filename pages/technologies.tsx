@@ -1,8 +1,8 @@
 import React from 'react';
 
-const TechStack = () => {
+const Technologies = () => {
     return (
-        <div id="tech-stack" className="flex, min-h-screen py-24 text-b-xl">
+        <div id="tech-stack" className="flex, min-h-screen py-16 text-b-xl">
             <div className="text-5xl text-left">
                 Technologies I enjoy working with
             </div>
@@ -20,4 +20,4 @@ const TechStack = () => {
     );
 };
 
-export default TechStack;
+export default Technologies;

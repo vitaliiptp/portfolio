@@ -26,7 +26,7 @@ const Contact = () => {
     };
 
     return (
-        <div id="contact" className="flex, min-h-screen py-24 text-b-xl">
+        <div className="flex, min-h-screen py-16 text-b-xl">
             <div className="text-5xl text-left">
                 Contact
             </div>
