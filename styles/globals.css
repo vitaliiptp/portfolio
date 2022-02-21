@@ -9,14 +9,14 @@
 
     /* Fonts (b = bold, n = normal) */
     .text-b-xl {
-        @apply font-bold text-4xl text-erin;
+        @apply font-bold text-4xl text-dark-grey;
     }
     .text-b {
-        @apply font-bold text-2xl text-erin;
+        @apply font-bold text-2xl text-dark-grey;
     }
 
     .text-n {
-        @apply font-normal text-2xl text-erin;
+        @apply font-normal text-2xl text-dark-grey;
     }
 }
 

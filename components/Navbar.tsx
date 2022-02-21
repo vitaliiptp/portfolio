@@ -6,7 +6,7 @@ const Navbar = () => {
   const [active, setActive] = useState(false);
 
   return (
-    <header className="sticky top-0 bg-grey">
+    <header className="sticky top-0 bg-grey lg:w-3/4">
       <nav className="flex flex-col items-end py-3 sm:items-center text-b-xl sm:pr-0">
         <div className="py-3 sm:hidden">
           <Hamburger active={active} setActive={setActive} />
