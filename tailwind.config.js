@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "home": "url('/assets/home-bg.png')",
+      },
       fontFamily: {
         primary: ["Montserrat", ...defaultTheme.fontFamily.sans],
       },
@@ -28,7 +31,7 @@ module.exports = {
       // 'erin': '#33ff33',
       'white': 'rgb(255,255,255)',
       // 'light-grey': 'rgb(65,65,65)',
-      'dark-grey': 'rgb(58,58,58)',
+      'grey': 'rgb(58,58,58)',
       // 'yellow-green': '#00BA00',
       // 'yellow-green_opacity': 'rgba(0,186,0,0.47)',
       // 'tea-green': '#C7FFC7',

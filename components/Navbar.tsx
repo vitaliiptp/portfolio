@@ -6,8 +6,8 @@ const Navbar = () => {
   const [active, setActive] = useState(false);
 
   return (
-    <header className="sticky top-0 bg-grey lg:w-3/4">
-      <nav className="flex flex-col items-end py-3 sm:items-center text-b-xl sm:pr-0">
+    <header className="sticky top-0 w-full bg-white">
+      <nav className="flex flex-col items-end py-3 sm:items-center text-b sm:pr-0">
         <div className="py-3 sm:hidden">
           <Hamburger active={active} setActive={setActive} />
         </div>
@@ -20,25 +20,25 @@ const Navbar = () => {
             <Link href="/">
               <a className="pt-3 opacity-80 sm:py-0 sm:px-7 sm:py-2 hover:opacity-100 focus:border-b-4 focus:opacity-100"
               onClick={() => setActive(!active)}>
-                Home
+                HOME
               </a>
             </Link>
             <Link href="/projects">
               <a className="pt-3 opacity-80 sm:py-0 sm:px-7 sm:py-2 hover:opacity-100 focus:border-b-4 focus:opacity-100"
                  onClick={() => setActive(!active)}>
-                Projects
+                PROJECTS
               </a>
             </Link>
             <Link href="/technologies">
               <a className="pt-3 opacity-80 sm:py-0 sm:px-7 sm:py-2 hover:opacity-100 focus:border-b-4 focus:opacity-100"
                  onClick={() => setActive(!active)}>
-                Tech Stack
+                TECH STACK
               </a>
             </Link>
             <Link href="/contact">
               <a className="pt-3 opacity-80 sm:py-0 sm:px-7 sm:py-2 hover:opacity-100 focus:border-b-4 focus:opacity-100"
                  onClick={() => setActive(!active)}>
-                Contact
+                CONTACT
               </a>
             </Link>
           </div>

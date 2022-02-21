@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className="w-full bg-dark-grey py-5">
+        <div className="w-full bg-grey py-5">
             <footer className="flex items-center justify-center">
                 <div className="flex justify-center">
                     <a href="https://github.com/vitaliiptp" target="_blank" rel="noopener noreferrer" >

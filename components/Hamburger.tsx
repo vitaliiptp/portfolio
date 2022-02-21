@@ -14,11 +14,11 @@ const Hamburger = ({active, setActive}: HamburgerProps) => {
     setActive(!active);
   };
 
-  const genericHamburgerLine = `h-1 w-6 my-0.5 rounded-full bg-erin transition ease transform duration-300`;
+  const genericHamburgerLine = `h-1 w-6 my-0.5 rounded-full bg-grey transition ease transform duration-300`;
 
   return (
     <button
-      className="flex flex-col justify-center items-center p-1 border-2 border-erin rounded group"
+      className="flex flex-col justify-center items-center p-1 border-2 border-grey rounded group"
       onClick={handleClick}
     >
       <div
