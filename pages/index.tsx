@@ -2,11 +2,22 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="bg-grey w-full">
-      <div className="min-h-screen bg-home">
-        <p className="h-48 w-auto text-b-xl bg-white">
-          Hey, I'm Vitalii and I love creating web applications
-        </p>
+    <div className="min-h-screen ">
+      <div className="flex flex-col md:relative">
+        <img src="/assets/home-bg.png" alt="home-background" />
+        <div className="flex flex-col items-center justify-center text-center bg-white md:absolute md:bottom-0 md:left-0 md:h-1/2 md:w-1/3 md:pl-5 md:pr-10 md:justify-start md:text-left">
+            <p className="text-b-xl my-20 tracking-wider leading-[4rem]">Hey, I'm Vitalii and I love creating web applications</p>
+            <button className="text-b_w md:absolute md:bottom-5 md:left-5 uppercase bg-sky pl-5 py-5 hover:bg-sky-hover">
+                <div className="flex flex-row">
+                    <img src="/assets/icon.svg" alt="user-icon"/>
+                    <span className="px-10">About Me</span>
+                </div>
+      </button>
+        </div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
       </div>
     </div>
     // <div className="flex, min-h-screen py-16 text-b-xl">

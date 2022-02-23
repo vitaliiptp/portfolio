@@ -9,15 +9,19 @@
 
     /* Fonts (b = bold, n = normal) */
     .text-b-xl {
-        @apply font-bold text-4xl text-grey;
+        @apply font-bold text-6xl text-grey;
     }
     .text-b {
         @apply font-bold text-xl text-grey;
     }
-
+    .text-b_w {
+        @apply font-bold text-xl text-white;
+    }
     .text-n {
         @apply font-normal text-2xl text-grey;
     }
+
+
 }
 
 

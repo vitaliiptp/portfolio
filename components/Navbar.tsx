@@ -6,39 +6,47 @@ const Navbar = () => {
   const [active, setActive] = useState(false);
 
   return (
-    <header className="sticky top-0 w-full bg-white">
-      <nav className="flex flex-col items-end py-3 sm:items-center text-b sm:pr-0">
-        <div className="py-3 sm:hidden">
+    <header className="sticky top-0 w-full bg-white z-10">
+      <nav className="flex flex-col items-end py-3 md:items-center text-b tracking-widest uppercase md:pr-0">
+        <div className="py-3 md:hidden">
           <Hamburger active={active} setActive={setActive} />
         </div>
-        <div className="w-full sm:w-auto">
+        <div className="w-full md:w-auto">
           <div
             className={`${
               active ? "" : "hidden"
-            } flex flex-col items-end w-full border-b-2 sm:flex-row sm:inline-flex sm:justify-center sm:items-center sm:pt-3`}
+            } flex flex-col items-end w-full border-b-2 md:flex-row md:inline-flex md:justify-center md:items-center md:pt-3`}
           >
             <Link href="/">
-              <a className="pt-3 opacity-80 sm:py-0 sm:px-7 sm:py-2 hover:opacity-100 focus:border-b-4 focus:opacity-100"
-              onClick={() => setActive(!active)}>
-                HOME
+              <a
+                className="pt-3 md:py-0 md:px-7 md:py-2 hover:text-blue focus:text-blue-active"
+                onClick={() => setActive(!active)}
+              >
+                Home
               </a>
             </Link>
             <Link href="/projects">
-              <a className="pt-3 opacity-80 sm:py-0 sm:px-7 sm:py-2 hover:opacity-100 focus:border-b-4 focus:opacity-100"
-                 onClick={() => setActive(!active)}>
-                PROJECTS
+              <a
+                className="pt-3 md:py-0 md:px-7 md:py-2 hover:text-blue focus:text-blue-active"
+                onClick={() => setActive(!active)}
+              >
+                Projects
               </a>
             </Link>
             <Link href="/technologies">
-              <a className="pt-3 opacity-80 sm:py-0 sm:px-7 sm:py-2 hover:opacity-100 focus:border-b-4 focus:opacity-100"
-                 onClick={() => setActive(!active)}>
-                TECH STACK
+              <a
+                className="pt-3 md:py-0 md:px-7 md:py-2 hover:text-blue focus:text-blue-active"
+                onClick={() => setActive(!active)}
+              >
+                Tech Stack
               </a>
             </Link>
             <Link href="/contact">
-              <a className="pt-3 opacity-80 sm:py-0 sm:px-7 sm:py-2 hover:opacity-100 focus:border-b-4 focus:opacity-100"
-                 onClick={() => setActive(!active)}>
-                CONTACT
+              <a
+                className="pt-3 md:py-0 md:px-7 md:py-2 hover:text-blue focus:text-blue-active"
+                onClick={() => setActive(!active)}
+              >
+                Contact
               </a>
             </Link>
           </div>

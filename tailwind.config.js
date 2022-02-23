@@ -7,9 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "home": "url('/assets/home-bg.png')",
-      },
+      // backgroundImage: {
+      //   "home": "url('/assets/home-bg.png')",
+      // },
       fontFamily: {
         primary: ["Montserrat", ...defaultTheme.fontFamily.sans],
       },
@@ -28,16 +28,13 @@ module.exports = {
       // },
     },
     colors: {
-      // 'erin': '#33ff33',
-      'white': 'rgb(255,255,255)',
-      // 'light-grey': 'rgb(65,65,65)',
-      'grey': 'rgb(58,58,58)',
-      // 'yellow-green': '#00BA00',
-      // 'yellow-green_opacity': 'rgba(0,186,0,0.47)',
-      // 'tea-green': '#C7FFC7',
-      // 'honeydew': '#F0FFF0',
-      // 'neon': '#00E500',
-      // 'yellow': '#e3cc3c'
+      'white': '#ffffff',
+      'grey': '#545454',
+      'sky': '#004275',
+      'sky-hover': '#003154',
+      'blue': '#018a8a',
+      'blue-active': '#07adaf',
+
     },
   },
   plugins: [],
