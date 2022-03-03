@@ -30,11 +30,12 @@ module.exports = {
     colors: {
       'white': '#ffffff',
       'grey': '#545454',
+      'light-grey': '#cecece',
       'sky': '#004275',
       'sky-hover': '#003154',
       'blue': '#018a8a',
       'blue-active': '#07adaf',
-
+      'black':'#000000'
     },
   },
   plugins: [],

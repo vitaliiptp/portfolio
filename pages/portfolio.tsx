@@ -7,7 +7,7 @@ interface ProjectProps {
   projects: Project[];
 }
 
-const Projects: NextPage<ProjectProps> = ({ projects }) => {
+const Portfolio: NextPage<ProjectProps> = ({ projects }) => {
   return (
     <div className="flex, min-h-screen py-16 text-b-xl">
       <div className="text-5xl text-left">Things I've made or helped making</div>
@@ -16,7 +16,7 @@ const Projects: NextPage<ProjectProps> = ({ projects }) => {
   );
 };
 
-export default Projects;
+export default Portfolio;
 
 export async function getServerSideProps() {
     const res = await fetch("http://localhost:3000/api/projects");

@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <header className="sticky top-0 w-full bg-white z-10">
-      <nav className="flex flex-col items-end py-3 md:items-center text-b tracking-widest uppercase md:pr-0">
+      <nav className="flex flex-col items-end py-3 pr-5 md:items-center text-b-s tracking-widest uppercase md:pr-0">
         <div className="py-3 md:hidden">
           <Hamburger active={active} setActive={setActive} />
         </div>
@@ -25,12 +25,12 @@ const Navbar = () => {
                 Home
               </a>
             </Link>
-            <Link href="/projects">
+            <Link href="/portfolio">
               <a
                 className="pt-3 md:py-0 md:px-7 md:py-2 hover:text-blue focus:text-blue-active"
                 onClick={() => setActive(!active)}
               >
-                Projects
+                Portfolio
               </a>
             </Link>
             <Link href="/technologies">

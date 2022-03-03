@@ -5,23 +5,46 @@
 /* Tailwind Custom Styles */
 
 @layer components {
-
-
+    .text-vw-l {
+        @apply font-bold text-[2.5vw] text-grey;
+    }
     /* Fonts (b = bold, n = normal) */
     .text-b-xl {
         @apply font-bold text-6xl text-grey;
     }
-    .text-b {
+    .text-b-l {
+        @apply font-bold text-5xl text-grey;
+    }
+    .text-b-m {
+        @apply font-bold text-3xl text-grey;
+    }
+    .text-b-s {
         @apply font-bold text-xl text-grey;
     }
-    .text-b_w {
+    .text-b-xl_w {
+        @apply font-bold text-4xl text-white;
+    }
+    .text-b-l_w {
+        @apply font-bold text-2xl text-white;
+    }
+    .text-b-m_w {
         @apply font-bold text-xl text-white;
     }
-    .text-n {
+    .text-b-s_w {
+        @apply font-bold text-xl text-white;
+    }
+    .text-n-xl {
+        @apply font-normal text-4xl text-grey;
+    }
+    .text-n-l {
         @apply font-normal text-2xl text-grey;
     }
-
-
+    .text-n-m {
+        @apply font-normal text-xl text-grey;
+    }
+    .text-n-s {
+        @apply font-normal text-lg text-grey;
+    }
 }
 
 
