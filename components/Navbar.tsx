@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import Hamburger from "./Hamburger";
 import Link from "next/link";
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
+
+  const router = useRouter();
 
   return (
     <header className="sticky top-0 w-full bg-white z-10">
@@ -19,7 +22,7 @@ const Navbar = () => {
           >
             <Link href="/">
               <a
-                className="pt-3 md:py-0 md:px-7 md:py-2 hover:text-blue focus:text-blue-active"
+                className={`pt-3 md:py-0 md:px-7 md:py-2 hover:text-blue ${router.pathname == "/" ? "text-blue-active" : ""}`}
                 onClick={() => setActive(!active)}
               >
                 Home
@@ -27,7 +30,7 @@ const Navbar = () => {
             </Link>
             <Link href="/portfolio">
               <a
-                className="pt-3 md:py-0 md:px-7 md:py-2 hover:text-blue focus:text-blue-active"
+                className={`pt-3 md:py-0 md:px-7 md:py-2 hover:text-blue ${router.pathname == "/portfolio" ? "text-blue-active" : ""}`}
                 onClick={() => setActive(!active)}
               >
                 Portfolio
@@ -35,7 +38,7 @@ const Navbar = () => {
             </Link>
             <Link href="/technologies">
               <a
-                className="pt-3 md:py-0 md:px-7 md:py-2 hover:text-blue focus:text-blue-active"
+                className={`pt-3 md:py-0 md:px-7 md:py-2 hover:text-blue ${router.pathname == "/technologies" ? "text-blue-active" : ""}`}
                 onClick={() => setActive(!active)}
               >
                 Tech Stack
@@ -43,7 +46,7 @@ const Navbar = () => {
             </Link>
             <Link href="/contact">
               <a
-                className="pt-3 md:py-0 md:px-7 md:py-2 hover:text-blue focus:text-blue-active"
+                className={`pt-3 md:py-0 md:px-7 md:py-2 hover:text-blue ${router.pathname == "/contact" ? "text-blue-active" : ""}`}
                 onClick={() => setActive(!active)}
               >
                 Contact

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ProjectCard from "../components/ProjectCard";
 import { Project } from "../utils/types";
 import { NextPage } from "next";
@@ -8,10 +8,11 @@ interface ProjectProps {
 }
 
 const Portfolio: NextPage<ProjectProps> = ({ projects }) => {
-  return (
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    return (
     <div className="flex, min-h-screen py-16 text-b-xl">
-      <div className="text-5xl text-left">Things I've made or helped making</div>
-      <ProjectCard projects={projects} />
+      <ProjectCard projects={projects} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} />
     </div>
   );
 };
