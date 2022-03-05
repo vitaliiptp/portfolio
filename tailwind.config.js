@@ -30,7 +30,8 @@ module.exports = {
     colors: {
       'white': '#ffffff',
       'grey': '#545454',
-      'light-grey': '#cecece',
+      'dark-grey': '#2a2a2a',
+      'light-grey': '#e5e4e4',
       'sky': '#004275',
       'sky-hover': '#003154',
       'blue': '#018a8a',

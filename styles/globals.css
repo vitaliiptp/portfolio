@@ -15,11 +15,23 @@
     .text-b-l {
         @apply font-bold text-5xl text-grey;
     }
+    .text-b-sl {
+        @apply font-bold text-4xl text-grey;
+    }
     .text-b-m {
-        @apply font-bold text-3xl text-grey;
+        @apply font-bold text-xl text-grey;
     }
     .text-b-s {
         @apply font-bold text-xl text-grey;
+    }
+    .text-b-xl_black {
+        @apply font-bold text-6xl text-dark-grey;
+    }
+    .text-b-l_black {
+        @apply font-bold text-5xl text-dark-grey;
+    }
+    .text-b-m_blue {
+        @apply font-bold text-xl text-blue-active;
     }
     .text-b-xl_w {
         @apply font-bold text-4xl text-white;
@@ -32,6 +44,15 @@
     }
     .text-b-s_w {
         @apply font-bold text-xl text-white;
+    }
+    .text-sb-l {
+        @apply font-semibold text-4xl text-grey;
+    }
+    .text-sb-m {
+        @apply font-semibold text-3xl text-grey;
+    }
+    .text-sb-s {
+        @apply font-semibold text-lg text-light-grey;
     }
     .text-n-xl {
         @apply font-normal text-4xl text-grey;

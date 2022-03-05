@@ -1,0 +1,31 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "url": "https://github.com/vitaliiptp/feedback-app",
+      "name": "Feedback App",
+      "bookmark": "This project require me to build responsive design",
+      "tech": "Interactive Design, HTML / CSS / JS",
+      "description": "This is a Product Feedback Application implemented with Next JS and Tailwind.",
+      "screenshots": [11, 12, 13]
+    },
+    {
+      "id": 2,
+      "url": "https://github.com/vitaliiptp/space-project-front",
+      "name": "Space App",
+      "bookmark": "This project require me to build responsive design",
+      "tech": "Interactive Design, HTML / CSS / JS",
+      "description": "This is a full-stack web application. It consists of two separate repos for frontend and backend. Fron-end is built using React, while back-end is built with Node JS, Express and MySQL for databases. Among features implemented in this project are: NASA API, Google Maps API, API to retrieve information about planets in Solar System, Registration with password hashing and Joi verification, Functioning contact form, Responsive design.",
+      "screenshots": [21, 22, 23, 24]
+    },
+    {
+      "id": 3,
+      "url": "https://github.com/vitaliiptp/jam-project-front",
+      "name": "Jam-Jam App",
+      "bookmark": "This project require me to build responsive design",
+      "tech": "Interactive Design, HTML / CSS / JS",
+      "description": "This is a full-stack web application, built as part of the hackathon solution. The app was created to showcase solution that helps to connect the musicians and gather for jam sessions. It consists of two separate repos for frontend and backend. Fron-end is built using React, while back-end is built with Node JS, Express and MySQL for databases.",
+      "screenshots": [31, 32]
+    }
+  ]
+}

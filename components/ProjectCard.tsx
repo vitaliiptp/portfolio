@@ -1,82 +1,92 @@
 import React from "react";
 import { Project } from "../utils/types";
 
+
 interface ProjectProps {
   projects: Project[];
   currentIndex: number;
   setCurrentIndex: any;
 }
 
-const ProjectCard = ({ projects, currentIndex, setCurrentIndex }: ProjectProps) => {
-
-    const handleOnNextClick = () => {
+const ProjectCard = ({
+  projects,
+  currentIndex,
+  setCurrentIndex,
+}: ProjectProps) => {
+  const handleOnNextClick = () => {
     setCurrentIndex((currentIndex + 1) % projects.length);
   };
 
-    const handleOnPrevClick = () => {
-        setCurrentIndex((currentIndex + (projects.length - 1)) % projects.length);
-    };
+  const handleOnPrevClick = () => {
+    setCurrentIndex((currentIndex + (projects.length - 1)) % projects.length);
+  };
 
-    const prevProjIndex = (currentIndex + 1) % projects.length
-    const nextProjIndex = (currentIndex + (projects.length - 1)) % projects.length
+  const nextProjIndex = (currentIndex + 1) % projects.length;
+  const prevProjIndex =
+    (currentIndex + (projects.length - 1)) % projects.length;
 
   return (
     <div className="min-h-screen w-4/5 m-auto">
-      <div className="">
-        <div>
-          <a href={projects[currentIndex].url} target="_blank" rel="noopener noreferrer">
-            <p className="text-b-xl underline">{projects[currentIndex].name}</p>
-          </a>
-          <img
-            src={`/assets/${projects[currentIndex]._id}.png`}
-            alt="Logo"
-            width={500}
-            height={340}
-          />
+      <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center w-full h-auto">
+          <img src={`/assets/${projects[currentIndex].id}.png`} alt="project preview" width={2200} />
+        </div>
+        <div className="flex flex-col items-center mt-16 mb:6 lg:flex-row lg:items-start w-full lg:mt-32 lg:mb-12">
+          <div className="flex flex-col w-full border-y-[3px] border-light-grey text-left text-b-l_black lg:w-1/3 py-16 lg:mr-32 lg:text-b-xl_black">
+            <p>Bookmark</p>
+            <p className="mt-10 text-n-m tracking-wide leading-relaxed 2xl:text-n-l 2xl:leading-relaxed">
+              {projects[currentIndex].bookmark}
+            </p>
+            <p className="mt-10 text-b-m_blue">{projects[currentIndex].tech}</p>
+            {/*<p className='text-b-m_blue'>HTML / CSS / JS</p>*/}
+            <button className="mt-10 w-60 text-b-s text-center uppercase border-4 px-8 py-4 hover:bg-black hover:text-b-s_w hover:border-black">
+              <a href={projects[currentIndex].url} target="_blank" rel="noopener noreferrer">Visit website</a>
+            </button>
+          </div>
+          <div className="flex flex-col my-16 lg:my-0 lg:w-2/3 text-left">
+            <div className="flex flex-col">
+              <p className='text-b-sl tracking-wide lg:text-b-l'>Project Background</p>
+              <p className="my-10 text-n-m tracking-wide leading-relaxed 2xl:text-n-l 2xl:leading-relaxed">
+                {projects[currentIndex].description}
+              </p>
+            </div>
+            <div className="flex flex-col">
+              <p className='my-10 text-b-sl tracking-wide lg:text-b-l'>Static Preview</p>
+
+                {projects[currentIndex].screenshots.map(screenshot =>
+                    <div key={screenshot} className="w-full mb-10">
+                      <img src={`/assets/${screenshot}.png`} alt='screenshot' />
+                    </div>
+                )}
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-row w-full mb-12 border-y-[3px] divide-x-[3px] border-light-grey divide-light-grey">
+          <button className="flex w-1/2 justify-start" onClick={handleOnPrevClick}>
+            <div className="flex flex-row py-8">
+              <div className="flex items-center">
+                <img src="/assets/chevron-left.svg" alt='chevron left' />
+              </div>
+              <div className="flex flex-col text-left pl-6">
+                <p className="text-sb-m lg:text-sb-l">{projects[prevProjIndex].name}</p>
+                <p className="text-sb-s">Previous Project</p>
+              </div>
+            </div>
+          </button>
+          <button className="flex w-1/2 justify-end" onClick={handleOnNextClick}>
+            <div className="flex flex-row py-8">
+              <div className="flex flex-col text-right pr-6">
+                <p className="text-sb-m lg:text-sb-l">{projects[nextProjIndex].name}</p>
+                <p className="text-sb-s">Next Project</p>
+              </div>
+              <div className="flex items-center">
+                <img src="/assets/chevron-right.svg" alt='chevron right' />
+              </div>
+            </div>
+          </button>
         </div>
       </div>
-      <div className="">
-        <p className="">
-          {projects[currentIndex].description}
-        </p>
-      </div>
-      <div className="flex flex-row w-full border-y-2 divide-x-2">
-        <button className='flex w-1/2 justify-start' onClick={handleOnPrevClick}>
-            <div className='flex flex-col text-left'>
-                <p>{projects[prevProjIndex].name}</p>
-                <p>Previous Project</p>
-            </div>
-        </button>
-        <button className='flex w-1/2 justify-end' onClick={handleOnNextClick}>
-            <div className='flex flex-col text-right'>
-                <p>{projects[nextProjIndex].name}</p>
-                <p>Next Project</p>
-            </div>
-
-            </button>
-      </div>
     </div>
-
-    // <div className="min-h-screen w-4/5 m-auto">
-    //     {projects.map((project) =>
-    //         <div key={project._id} className="flex flex-col justify-center items-center pt-20">
-    //             <div className="flex px-10 active flex-[35%]">
-    //                 <div>
-    //                     <a href={project.url} target="_blank" rel="noopener noreferrer" ><p className="text-b-xl underline">{project.name}</p></a>
-    //                     <img src={`/assets/${project._id}.png`} alt="Logo" width={500} height={340} />
-    //                 </div>
-    //             </div>
-    //             <div className="flex flex-col flex-[65%]">
-    //                 <p className="pt-4 text-2xl text-b tracking-wide leading-loose">{project.description}</p>
-    //             </div>
-    //             <div className='flex flex-row justify-between w-full'>
-    //                 <button>Previous</button>
-    //                 <button>Next</button>
-    //             </div>
-    //         </div>
-    //
-    //     )}
-    // </div>
   );
 };
 

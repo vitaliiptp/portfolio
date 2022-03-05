@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import ProjectCard from "../components/ProjectCard";
-import { Project } from "../utils/types";
-import { NextPage } from "next";
+import { projects } from "../data.json";
 
-interface ProjectProps {
-  projects: Project[];
-}
 
-const Portfolio: NextPage<ProjectProps> = ({ projects }) => {
+const Portfolio = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     return (
@@ -19,15 +15,15 @@ const Portfolio: NextPage<ProjectProps> = ({ projects }) => {
 
 export default Portfolio;
 
-export async function getServerSideProps() {
-    const res = await fetch("http://localhost:3000/api/projects");
-    const data = await res.json();
-    if (!data) {
-        return {
-            notFound: true,
-        };
-    }
-    return {
-        props: { projects: data },
-    };
-}
+// export async function getServerSideProps() {
+//     const res = await fetch("http://localhost:3000/api/projects");
+//     const data = await res.json();
+//     if (!data) {
+//         return {
+//             notFound: true,
+//         };
+//     }
+//     return {
+//         props: { projects: data },
+//     };
+// }

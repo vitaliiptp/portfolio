@@ -7,10 +7,12 @@ export interface ResponseFunc {
 }
 
 export interface Project {
-    _id?: string
+    id: number
     url: string;
     name: string;
-    description?: string;
-    screenshots?: string[];
+    bookmark: string;
+    tech: string;
+    description: string;
+    screenshots: number[];
 }
 
