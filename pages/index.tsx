@@ -28,13 +28,13 @@ const Home = () => {
 
         </div>
       </div>
-      <div className="flex flex-col items-center my-20 md:flex-row md:items-start md:my-40">
+      <div className="flex flex-col items-center mt-20 md:flex-row md:items-start md:mt-40">
         <div className="flex md:w-2/5 h-auto">
           <img className="md:h-[40rem] md:object-cover" src="/assets/ava.jpeg" alt="avatar" />
         </div>
         <div id='about-me' className="mt-16 md:ml-20 lg:ml-30 xl:ml-40 md:w-3/5 md:mt-0 border-y-4 border-light-grey">
           <div className="text-left">
-            <p className="my-12 text-b-xl sm:text-b-m lg:text-b-xl">About Me</p>
+            <p className="my-12 text-b-l lg:text-b-xl">About Me</p>
             <p className="text-n-m tracking-wide leading-relaxed 2xl:text-n-l 2xl:leading-loose">
               After more than 8 years in financial analysis that included
               building dashboards, forecasts, and custom reports with Python

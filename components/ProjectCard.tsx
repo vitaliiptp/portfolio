@@ -61,7 +61,7 @@ const ProjectCard = ({
             </div>
           </div>
         </div>
-        <div className="flex flex-row w-full mb-12 border-y-[3px] divide-x-[3px] border-light-grey divide-light-grey">
+        <div className="flex flex-row w-full border-y-[3px] divide-x-[3px] border-light-grey divide-light-grey">
           <button className="flex w-1/2 justify-start" onClick={handleOnPrevClick}>
             <div className="flex flex-row py-8">
               <div className="flex items-center">

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import emailjs from 'emailjs-com';
+import ContactModal from "../components/ContactModal";
 
 
 const SERVICE_ID = "service_mampt7w";
@@ -26,12 +27,11 @@ const Contact = () => {
     };
 
     return (
-        <div className="flex, min-h-screen py-16 text-b-xl">
-            <div className="text-5xl text-left">
-                Contact
-            </div>
+        <div>
+            <ContactModal />
+        <div className="flex max-w-lg py-16 text-b-xl">
             {(status === 'Submit' || status === 'Sending...') &&
-            <div className="mt-20 ml-10 w-[35rem] bg-light-grey rounded-lg">
+            <div className="mt-20 ml-10 w-[40rem] bg-light-grey rounded-lg">
                 <form className="flex flex-col w-full p-10 text-3xl text-n tracking-wide leading-loose" onSubmit={handleSubmit}>
                     <label htmlFor="name">Name*</label>
                     <input
@@ -65,6 +65,7 @@ const Contact = () => {
             {status === "Message Sent" &&
             <div className="mt-40 ml-10 text-4xl text-left">{success ? "Thank you for your message!" : "Message wasn't sent. Please try again later."}</div>
             }
+        </div>
         </div>
     );
 };
