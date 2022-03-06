@@ -42,7 +42,7 @@
         @apply font-bold text-lg text-white;
     }
     .text-b-s_white {
-        @apply font-bold text-lg text-white;
+        @apply font-bold text-base text-white;
     }
     .text-sb-l_grey {
         @apply font-semibold text-2xl text-grey;
