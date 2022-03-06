@@ -46,7 +46,7 @@ const Home = () => {
               web developer position.
             </p>
             <Link href='/portfolio'>
-              <button className="my-10 text-b-s_grey text-center uppercase border-4 px-8 py-4 hover:bg-black hover:text-b-s_white hover:border-black">
+              <button className="my-10 text-b-s_grey text-center uppercase border-2 px-8 py-4 hover:bg-black hover:text-b-s_white hover:border-black">
                 Go to portfolio
               </button>
             </Link>

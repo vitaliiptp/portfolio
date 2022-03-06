@@ -59,7 +59,7 @@ const Contact = () => {
                         required
                     />
                     <button
-                        className="w-full py-2 px-4 text-b-s_grey text-center uppercase border-4 px-8 py-4 hover:bg-black hover:text-b-s_white hover:border-black rounded focus:outline-none focus:shadow-outline"
+                        className="w-full py-2 px-4 text-b-m_grey text-center uppercase border-2 px-8 py-4 hover:bg-black hover:text-b-m_white hover:border-black rounded focus:outline-none focus:shadow-outline"
                         type="submit">
                         {status}
                     </button>
