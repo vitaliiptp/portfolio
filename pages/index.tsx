@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Home = () => {
   return (
-    <div className="min-h-screen w-auto mx-5 lg:w-4/5 lg:m-auto">
+    <div className="min-h-screen w-auto mt-4 mx-5 lg:w-4/5 lg:m-auto md:mt-4 lg:mt-4">
       <div className="flex flex-col  md:relative ">
         <img src="/assets/home/home-bg.png" alt="home-background" />
         <div className="flex flex-col items-center justify-center text-center bg-main md:absolute md:bottom-0 md:left-0 md:h-1/2 md:w-1/3 md:pr-10 md:justify-start md:text-left">

@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": 1,
-      "url": "https://github.com/vitaliiptp/feedback-app",
+      "url": "https://wcs-final-proj.vercel.app/",
       "name": "Feedback App",
       "bookmark": "This project require me to build responsive design",
       "tech": "Interactive Design, HTML / CSS / JS",
@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "url": "https://github.com/vitaliiptp/space-project-front",
+      "url": "https://space-project-front.herokuapp.com/",
       "name": "Space App",
       "bookmark": "This project require me to build responsive design",
       "tech": "Interactive Design, HTML / CSS / JS",
@@ -28,5 +28,5 @@
       "screenshots": [31, 32]
     }
   ],
-  "technologies": ["Bootstrap", "CSS3", "ExpressJS", "HTML5", "JavaScript", "Jupyter", "MySql", "NextJS", "NodeJS", "PyCharm", "Python", "React", "tailwindcss", "WebStorm"]
+  "technologies": ["HTML5", "CSS3", "tailwindcss", "Bootstrap", "JavaScript", "React", "NextJS", "NodeJS", "ExpressJS", "MySql", "Python", "Jupyter", "PyCharm", "WebStorm"]
 }
