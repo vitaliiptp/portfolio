@@ -7,7 +7,7 @@ const Technologies = () => {
             <div className='rounded-lg w-full h-auto mt-24 mb-16 bg-white drop-shadow border border-light-grey'>
                 <div className="flex flex-wrap items-center justify-center py-8 lg:py-16 px-4">
                     {data.technologies.map((tech, index) =>
-                        <div key={tech+index} className="flex flex-col items-center justify-center w-32 h-32 rounded-lg drop-shadow border border-light-grey my-5 lg:my-8 mx-5 p-4 bg-white">
+                        <div key={tech+index} className="flex flex-col items-center justify-center w-28 h-28 sm:w-32 sm:h-32 rounded-lg drop-shadow border border-light-grey my-3 lg:my-8 mx-5 p-4 bg-white">
                             <img src={`assets/technologies/${tech}.svg`} alt='icon' width={50} height={50} />
                             <p className="pt-1 text-sb-s_black">{tech}</p>
                         </div>
