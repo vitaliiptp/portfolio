@@ -10,7 +10,7 @@ const Home = () => {
         <img src="/assets/home/home-bg.png" alt="home-background" />
         <div className="flex flex-col items-center justify-center text-center bg-main md:absolute md:bottom-0 md:left-0 md:h-1/2 md:w-1/3 md:pr-10 md:justify-start md:text-left">
           <p className="text-b-l leading-[4.5rem] tracking-wider my-10 md:text-vw-l md:leading-normal md:tracking-normal md:my-0 xl:my-5 2xl:my-10">
-            Hey, I'm Vitalii and I love creating web applications
+            {`Hey, I'm Vitalii and I love creating web applications`}
           </p>
           <Link href='#about-me'>
             <button className="text-b-m_w md:text-b-s_w md:py-3 lg:py-5 lg:text-b-m_w md:absolute md:bottom-0 md:left-0 md:text-b-m_w lg:text-b_w uppercase bg-sky pl-5 py-5 hover:bg-sky-hover">
