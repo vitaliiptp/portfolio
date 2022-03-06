@@ -18,7 +18,7 @@
         @apply font-bold text-lg text-grey;
     }
     .text-b-s_grey {
-        @apply font-bold text-lg text-grey;
+        @apply font-bold text-base text-grey;
     }
     .text-b-m_green {
         @apply font-bold text-lg text-contact-modal-text;
