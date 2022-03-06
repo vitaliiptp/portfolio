@@ -30,9 +30,9 @@ const Contact = () => {
     };
 
     return (
-            <div className="min-h-screen w-auto mt-32 md:w-[30rem]">
+            <div className="lg:min-h-screen w-[20rem] mx-5 mt-16 lg:mt-24 md:w-[30rem]">
             {(status === 'Submit' || status === 'Sending...') &&
-                <form className="flex flex-col bg-white shadow-md border border-light-grey rounded-lg px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit}>
+                <form className="flex flex-col bg-white shadow-md border border-light-grey rounded-lg px-8 pt-6 pb-8" onSubmit={handleSubmit}>
                         <label className="text-sb-m_black mb-2" htmlFor="name">Name*</label>
                         <input
                             className="shadow appearance-none border rounded w-full py-2 px-3 mb-8 text-n-s_grey leading-tight focus:outline-none focus:shadow-outline"

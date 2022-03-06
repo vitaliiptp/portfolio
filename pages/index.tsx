@@ -5,11 +5,11 @@ import Link from "next/link";
 
 const Home = () => {
   return (
-    <div className="min-h-screen w-4/5 m-auto">
+    <div className="min-h-screen w-auto mx-5 lg:w-4/5 lg:m-auto">
       <div className="flex flex-col  md:relative ">
         <img src="/assets/home/home-bg.png" alt="home-background" />
         <div className="flex flex-col items-center justify-center text-center bg-main md:absolute md:bottom-0 md:left-0 md:h-1/2 md:w-1/3 md:pr-10 md:justify-start md:text-left">
-          <p className="text-b-l_grey leading-[4.5rem] tracking-wider my-10 md:text-vw_grey md:leading-normal md:tracking-normal md:my-0 xl:my-5 2xl:my-10">
+          <p className="text-b-l_grey leading-[3rem] tracking-wider my-10 md:text-vw_grey md:leading-normal md:tracking-normal md:my-0 xl:my-5 2xl:my-10">
             {`Hey, I'm Vitalii and I love creating web applications`}
           </p>
           <Link href='#about-me'>

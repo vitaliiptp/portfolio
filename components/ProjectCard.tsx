@@ -26,7 +26,7 @@ const ProjectCard = ({
     (currentIndex + (projects.length - 1)) % projects.length;
 
   return (
-    <div className="min-h-screen w-4/5 m-auto">
+    <div className="min-h-screen w-auto mx-5 lg:w-4/5 lg:m-auto">
       <div className="flex flex-col items-center">
         <div className="flex flex-col items-center w-full h-auto">
           <img src={`/assets/projects/${projects[currentIndex].id}.png`} alt="project preview" width={2200} />
