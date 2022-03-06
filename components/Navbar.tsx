@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <header className="sticky top-0 w-full bg-main z-10">
-      <nav className="flex flex-col items-end py-3 pr-5 md:items-center text-b-s tracking-widest uppercase md:pr-0">
+      <nav className="flex flex-col items-end py-3 pr-5 md:items-center text-b-s_grey tracking-widest uppercase md:pr-0">
         <div className="py-3 md:hidden">
           <Hamburger active={active} setActive={setActive} />
         </div>

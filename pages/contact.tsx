@@ -30,12 +30,12 @@ const Contact = () => {
     };
 
     return (
-            <div className="min-h-screen w-[35rem] mt-32">
+            <div className="min-h-screen w-auto mt-32 md:w-[35rem]">
             {(status === 'Submit' || status === 'Sending...') &&
                 <form className="flex flex-col bg-white shadow-md border border-light-grey rounded-lg px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit}>
                         <label className="text-sb-m_black mb-2" htmlFor="name">Name*</label>
                         <input
-                            className="shadow appearance-none border rounded w-full py-2 px-3 mb-8 text-n-s leading-tight focus:outline-none focus:shadow-outline"
+                            className="shadow appearance-none border rounded w-full py-2 px-3 mb-8 text-n-s_grey leading-tight focus:outline-none focus:shadow-outline"
                             type="name"
                             name="name"
                             id="name"
@@ -44,7 +44,7 @@ const Contact = () => {
                         />
                     <label className="text-sb-m_black mb-2" htmlFor="email">Email*</label>
                     <input
-                        className="shadow appearance-none border rounded w-full py-2 px-3 mb-8 text-n-s leading-tight focus:outline-none focus:shadow-outline"
+                        className="shadow appearance-none border rounded w-full py-2 px-3 mb-8 text-n-s_grey leading-tight focus:outline-none focus:shadow-outline"
                         type="email"
                         name="email"
                         id="email"
@@ -53,13 +53,13 @@ const Contact = () => {
                     />
                     <label className="text-sb-m_black mb-2" htmlFor="message">Message*</label>
                     <textarea
-                        className="shadow appearance-none border rounded w-full py-2 px-3 mb-12 text-n-s leading-tight focus:outline-none focus:shadow-outline h-32"
+                        className="shadow appearance-none border rounded w-full py-2 px-3 mb-12 text-n-s_grey leading-tight focus:outline-none focus:shadow-outline h-32"
                         placeholder="Start typing..."
                         name="message"
                         required
                     />
                     <button
-                        className="w-full py-2 px-4 text-b-s text-center uppercase border-4 px-8 py-4 hover:bg-black hover:text-b-s_w hover:border-black rounded focus:outline-none focus:shadow-outline"
+                        className="w-full py-2 px-4 text-b-s_grey text-center uppercase border-4 px-8 py-4 hover:bg-black hover:text-b-s_white hover:border-black rounded focus:outline-none focus:shadow-outline"
                         type="submit">
                         {status}
                     </button>

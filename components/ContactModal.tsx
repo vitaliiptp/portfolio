@@ -29,7 +29,7 @@ const ContactModal = ({modalActive, setModalActive}: ContactModalProps) => {
                                 <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                                     <h3 className="text-sb-m_black leading-6 mb-6">Message Sent</h3>
                                     <div className="mt-2">
-                                        <p className="text-n-m">Thank you for your message!</p>
+                                        <p className="text-n-m_grey">Thank you for your message!</p>
                                     </div>
                                 </div>
                             </div>
@@ -37,7 +37,7 @@ const ContactModal = ({modalActive, setModalActive}: ContactModalProps) => {
                         <div className="px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
                             <Link href='/'>
                                 <button type="button"
-                                        className="mt-3 w-full inline-flex justify-center py-2 bg-contact-modal text-b-m_green hover:text-b-m sm:mt-0 sm:ml-3 sm:w-auto"
+                                        className="mt-3 w-full inline-flex justify-center py-2 bg-contact-modal text-b-m_green hover:text-b-s_grey sm:mt-0 sm:ml-3 sm:w-auto"
                                 onClick={() => setModalActive(false)}>Dismiss
                                 </button>
                             </Link>

@@ -16,7 +16,7 @@ const Technologies = () => {
             </div>
 
             <button
-                className="py-2 px-4 text-b-s text-center uppercase border-4 px-8 py-4 hover:bg-black hover:text-b-s_w hover:border-black rounded focus:outline-none focus:shadow-outline"
+                className="py-2 px-4 text-b-s_grey text-center uppercase border-4 px-8 py-4 hover:bg-black hover:text-b-s_white hover:border-black rounded focus:outline-none focus:shadow-outline"
                 type="submit">
                 <a href="/assets/technologies/CV_Vitalii_Potapenko.pdf" target="_blank" rel="noopener noreferrer" >Download CV</a>
             </button>
