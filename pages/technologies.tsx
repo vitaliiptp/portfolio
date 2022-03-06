@@ -1,21 +1,25 @@
 import React from 'react';
+import data from "../data.json";
 
 const Technologies = () => {
     return (
-        <div id="tech-stack" className="flex, min-h-screen py-16 text-b-xl">
-            <div className="text-5xl text-left">
-                Technologies I enjoy working with
+        <div className="flex flex-col items-center px-8 xl:w-3/5 m-auto min-h-screen">
+            <div className='rounded-lg w-full h-auto mt-24 mb-16 bg-white drop-shadow border border-light-grey'>
+                <div className="flex flex-wrap items-center justify-center py-8 lg:py-16 px-4">
+                    {data.technologies.map((tech, index) =>
+                        <div key={tech+index} className="flex flex-col items-center justify-center w-32 h-32 rounded-lg drop-shadow border border-light-grey my-5 lg:my-8 mx-5 p-4 bg-white">
+                            <img src={`assets/technologies/${tech}.svg`} alt='icon' width={50} height={50} />
+                            <p className="pt-1 text-sb-s_black">{tech}</p>
+                        </div>
+                    )}
+                </div>
             </div>
-            <div className="px-10 pt-20">
-                <p>HTML/CSS</p>
-                <p>JavaScript (React, NextJS, Storybook, NodeJS + Express)</p>
-                <p>Python (Flask, Jupiter Notebooks)</p>
-                <p>SQL (MySQL)</p>
-                <p>REST APIs</p>
-                <p>Git, Unix</p>
-                <p>VS Code, WebStorm, PyCharm</p>
-            </div>
-            <div className="px-10 pt-20"><a href="/assets/CV_Vitalii_Potapenko.pdf" download>Download CV</a></div>
+
+            <button
+                className="py-2 px-4 text-b-s text-center uppercase border-4 px-8 py-4 hover:bg-black hover:text-b-s_w hover:border-black rounded focus:outline-none focus:shadow-outline"
+                type="submit">
+                <a href="/assets/technologies/CV_Vitalii_Potapenko.pdf" target="_blank" rel="noopener noreferrer" >Download CV</a>
+            </button>
         </div>
     );
 };

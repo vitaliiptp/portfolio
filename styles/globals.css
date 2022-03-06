@@ -24,11 +24,20 @@
     .text-b-s {
         @apply font-bold text-xl text-grey;
     }
+    .text-b-m_green {
+        @apply font-bold text-xl text-contact-modal-text;
+    }
     .text-b-xl_black {
         @apply font-bold text-6xl text-dark-grey;
     }
     .text-b-l_black {
         @apply font-bold text-5xl text-dark-grey;
+    }
+    .text-sb-m_black {
+        @apply font-semibold text-2xl text-dark-grey;
+    }
+    .text-sb-s_black {
+        @apply font-semibold text-lg text-dark-grey;
     }
     .text-b-m_blue {
         @apply font-bold text-xl text-blue-active;
@@ -52,7 +61,7 @@
         @apply font-semibold text-3xl text-grey;
     }
     .text-sb-s {
-        @apply font-semibold text-lg text-light-grey;
+        @apply font-semibold text-lg text-semi-light-grey;
     }
     .text-n-xl {
         @apply font-normal text-4xl text-grey;

@@ -27,5 +27,6 @@
       "description": "This is a full-stack web application, built as part of the hackathon solution. The app was created to showcase solution that helps to connect the musicians and gather for jam sessions. It consists of two separate repos for frontend and backend. Fron-end is built using React, while back-end is built with Node JS, Express and MySQL for databases.",
       "screenshots": [31, 32]
     }
-  ]
+  ],
+  "technologies": ["Bootstrap", "CSS3", "ExpressJS", "HTML5", "JavaScript", "Jupyter", "MySql", "NextJS", "NodeJS", "PyCharm", "Python", "React", "tailwindcss", "WebStorm"]
 }

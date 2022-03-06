@@ -29,7 +29,7 @@ const ProjectCard = ({
     <div className="min-h-screen w-4/5 m-auto">
       <div className="flex flex-col items-center">
         <div className="flex flex-col items-center w-full h-auto">
-          <img src={`/assets/${projects[currentIndex].id}.png`} alt="project preview" width={2200} />
+          <img src={`/assets/projects/${projects[currentIndex].id}.png`} alt="project preview" width={2200} />
         </div>
         <div className="flex flex-col items-center mt-16 mb:6 lg:flex-row lg:items-start w-full lg:mt-32 lg:mb-12">
           <div className="flex flex-col w-full border-y-[3px] border-light-grey text-left text-b-l_black lg:w-1/3 py-16 lg:mr-32 lg:text-b-xl_black">
@@ -55,7 +55,7 @@ const ProjectCard = ({
 
                 {projects[currentIndex].screenshots.map(screenshot =>
                     <div key={screenshot} className="w-full mb-10">
-                      <img src={`/assets/${screenshot}.png`} alt='screenshot' />
+                      <img src={`/assets/projects/${screenshot}.png`} alt='screenshot' />
                     </div>
                 )}
             </div>
@@ -65,7 +65,7 @@ const ProjectCard = ({
           <button className="flex w-1/2 justify-start" onClick={handleOnPrevClick}>
             <div className="flex flex-row py-8">
               <div className="flex items-center">
-                <img src="/assets/chevron-left.svg" alt='chevron left' />
+                <img src="/assets/projects/chevron-left.svg" alt='chevron left' />
               </div>
               <div className="flex flex-col text-left pl-6">
                 <p className="text-sb-m lg:text-sb-l">{projects[prevProjIndex].name}</p>
@@ -80,7 +80,7 @@ const ProjectCard = ({
                 <p className="text-sb-s">Next Project</p>
               </div>
               <div className="flex items-center">
-                <img src="/assets/chevron-right.svg" alt='chevron right' />
+                <img src="/assets/projects/chevron-right.svg" alt='chevron right' />
               </div>
             </div>
           </button>

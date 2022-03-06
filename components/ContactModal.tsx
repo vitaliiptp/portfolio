@@ -1,35 +1,52 @@
 import React from 'react';
+import Link from "next/link";
 
-const ContactModal = () => {
+
+interface ContactModalProps {
+    modalActive: boolean;
+    setModalActive: any;
+}
+
+const ContactModal = ({modalActive, setModalActive}: ContactModalProps) => {
+
     return (
-        <div className="w-full max-w-xl justify-center items-center">
-            <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-                <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
-                        Username
-                    </label>
-                    <input
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="username" type="text" placeholder="Username" />
+        <>
+            {modalActive &&
+            <div className="fixed z-10 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog"
+                 aria-modal="true">
+                <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                    <div className="fixed inset-0 bg-grey bg-opacity-75 transition-opacity" aria-hidden="true"/>
+                    <span className="hidden sm:inline-block sm:align-middle sm:h-screen"
+                          aria-hidden="true">&#8203;</span>
+                    <div
+                        className="relative inline-block align-bottom bg-contact-modal rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                        <div className="bg-contact-modal px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                            <div className="sm:flex sm:items-start">
+                                <div
+                                    className="mx-auto flex-shrink-0 flex items-start justify-center h-10 w-10 rounded-full sm:mx-0 sm:h-10 sm:w-10">
+                                    <img src='assets/contact/success.svg' alt='success' width={30}/>
+                                </div>
+                                <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                                    <h3 className="text-sb-m_black leading-6 mb-6">Message Sent</h3>
+                                    <div className="mt-2">
+                                        <p className="text-n-m">Thank you for your message!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                            <Link href='/'>
+                                <button type="button"
+                                        className="mt-3 w-full inline-flex justify-center py-2 bg-contact-modal text-b-m_green hover:text-b-m sm:mt-0 sm:ml-3 sm:w-auto"
+                                onClick={() => setModalActive(false)}>Dismiss
+                                </button>
+                            </Link>
+                        </div>
+                    </div>
                 </div>
-                <div className="mb-6">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
-                        Password
-                    </label>
-                    <input
-                        className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-                        id="password" type="password" placeholder="******************" />
-                        <p className="text-red-500 text-xs italic">Please choose a password.</p>
-                </div>
-                <div className="flex items-center justify-between">
-                    <button
-                        className="w-full py-2 px-4 text-b-s text-center uppercase border-4 px-8 py-4 hover:bg-black hover:text-b-s_w hover:border-black rounded focus:outline-none focus:shadow-outline"
-                        type="button">
-                        Send Message
-                    </button>
-                </div>
-            </form>
-        </div>
+            </div>
+            }
+        </>
     )
 }
 
