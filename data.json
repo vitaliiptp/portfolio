@@ -28,5 +28,5 @@
       "screenshots": [31, 32]
     }
   ],
-  "technologies": ["HTML5", "CSS3", "tailwindcss", "Bootstrap", "JavaScript", "React", "NextJS", "NodeJS", "ExpressJS", "MySql", "Python", "Jupyter", "PyCharm", "WebStorm"]
+  "technologies": ["HTML5", "CSS3", "tailwindcss", "Bootstrap", "JavaScript", "React", "NextJS", "NodeJS", "ExpressJS", "MySQL", "Python", "Jupyter", "PyCharm", "WebStorm"]
 }
