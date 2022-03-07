@@ -4,27 +4,27 @@
       "id": 1,
       "url": "https://wcs-final-proj.vercel.app/",
       "name": "Feedback App",
-      "bookmark": "This project require me to build responsive design",
-      "tech": "Interactive Design, HTML / CSS / JS",
-      "description": "This is a Product Feedback Application implemented with Next JS and Tailwind.",
+      "bookmark": "This project require me to build front-end application that is able to update information and store it in state",
+      "tech": "HTML / CSS / JS, NextJS, Tailwind",
+      "description": "This is a Product Feedback Application implemented with Next JS and Tailwind. Purpose of the application is to provide and store reviews of different products, comments and replies from users. Also it allows to filter feedbacks by various criteria.",
       "screenshots": [11, 12, 13]
     },
     {
       "id": 2,
       "url": "https://space-project-front.herokuapp.com/",
       "name": "Space App",
-      "bookmark": "This project require me to build responsive design",
-      "tech": "Interactive Design, HTML / CSS / JS",
-      "description": "This is a full-stack web application. It consists of two separate repos for frontend and backend. Fron-end is built using React, while back-end is built with Node JS, Express and MySQL for databases. Among features implemented in this project are: NASA API, Google Maps API, API to retrieve information about planets in Solar System, Registration with password hashing and Joi verification, Functioning contact form, Responsive design.",
+      "bookmark": "This project require me to build responsive design, connects front-end with back-end and use several APIs",
+      "tech": "Responsive Design, HTML / CSS / JS, React, NodeJS, Express, MySQL, APIs",
+      "description": "This is a full-stack web application. It consists of two separate repos for frontend and backend. Front-end is built using React, while back-end is built with Node JS, Express and MySQL for databases. Among features implemented in this project are: NASA API, Google Maps API, API to retrieve information about planets in Solar System, Registration with password hashing and Joi verification, Functioning contact form, Responsive design.",
       "screenshots": [21, 22, 23, 24]
     },
     {
       "id": 3,
       "url": "https://github.com/vitaliiptp/jam-project-front",
       "name": "Jam-Jam App",
-      "bookmark": "This project require me to build responsive design",
-      "tech": "Interactive Design, HTML / CSS / JS",
-      "description": "This is a full-stack web application, built as part of the hackathon solution. The app was created to showcase solution that helps to connect the musicians and gather for jam sessions. It consists of two separate repos for frontend and backend. Fron-end is built using React, while back-end is built with Node JS, Express and MySQL for databases.",
+      "bookmark": "This project require me to build responsive design, connects front-end with back-end and use several APIs",
+      "tech": "Responsive Design, HTML / CSS / JS, React, NodeJS, Express, MySQL, APIs",
+      "description": "This is a full-stack web application, built as part of the hackathon solution. The app was created to showcase solution that helps to connect the musicians and gather for jam sessions. It consists of two separate repos for frontend and backend. Front-end is built using React, while back-end is built with Node JS, Express and MySQL for databases.",
       "screenshots": [31, 32]
     }
   ],
